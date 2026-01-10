@@ -260,6 +260,9 @@ LANDING PAGE
   right: 40px;
   z-index: 100;
   box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll {

@@ -3,6 +3,7 @@ import NavBar from "./components/navBar";
 import Heading from "./components/heading";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
+import { IoMdMail } from "react-icons/io";
 
 export default function Home() {
   //Template ID: template_2tit16r
@@ -18,7 +19,7 @@ export default function Home() {
         <Heading />
         <a href="#">
           <button className="mail__btn click">
-            <i className="fa-solid fa-envelope"></i>
+            <IoMdMail className="fa-solid fa-envelope" />
           </button>
         </a>
         <a href="#projects" className="scroll">
