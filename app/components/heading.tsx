@@ -27,7 +27,7 @@ export default function Heading() {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href="./assets/Broady Butler Resume 8.pdf"
+            href="/assets/Broady Butler Resume.pdf"
             target="_blank"
             className="social__link click"
           >
