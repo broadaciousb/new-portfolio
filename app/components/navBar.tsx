@@ -1,4 +1,19 @@
+"use client";
+
+import { useState } from 'react';
+
 export default function NavBar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function toggleModal() {
+    if (isModalOpen) {
+    setIsModalOpen(false);
+    return document.body.classList.remove("modal--open");
+  }
+  setIsModalOpen(true);
+  document.body.classList += " modal--open";
+  }
+
   return (
     <nav>
       <div id="personal-logo">BB</div>
@@ -30,6 +45,7 @@ export default function NavBar() {
         <li className="nav__link">
           <a
             href="#"
+            onClick={toggleModal}
             className="
           nav__link--anchor
           link__hover-element

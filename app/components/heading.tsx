@@ -1,3 +1,7 @@
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa6";
+
 export default function Heading() {
   return (
     <header className="header">
@@ -17,21 +21,21 @@ export default function Heading() {
             target="_blank"
             className="social__link click"
           >
-            <i className="fa-brands fa-linkedin-in"></i>
+            <FaLinkedin />
           </a>
           <a
             href="https://github.com/broadaciousb"
             target="_blank"
             className="social__link click"
           >
-            <i className="fa-brands fa-github"></i>
+            <FaGithub />
           </a>
           <a
             href="/assets/Broady Butler Resume.pdf"
             target="_blank"
             className="social__link click"
           >
-            <i className="fa-solid fa-file-pdf"></i>
+            <FaFilePdf />
           </a>
         </div>
       </div>
