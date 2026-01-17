@@ -1,4 +1,5 @@
 import { IoMdClose } from "react-icons/io";
+import toggleModal from "./navBar";
 
 export default function Modal() {
   return (
@@ -54,7 +55,7 @@ export default function Modal() {
         </div>
       </div>
       <div className="modal__half modal__contact">
-        <a href="" onClick={}>
+        <a href="" onClick={toggleModal}>
           <IoMdClose className="modal__exit click" />
         </a>
         <h3 className="modal__title modal__title--contact">
