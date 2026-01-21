@@ -1,11 +1,36 @@
-'use client'
+"use client";
 
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 import NavBar from "./navBar";
 import Projects from "./projects";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
+gsap.registerPlugin(ScrambleTextPlugin);
+
 export default function NewLanding() {
-  
+  useEffect(() => {
+    gsap.to(".name", {
+      duration: 4,
+      scrambleText: "Broady Butler",
+    });
+
+    gsap.to(".title", {
+      duration: 4,
+      scrambleText: "Frontend Developer · Engineer",
+    });
+
+    gsap.to(".description", {
+      duration: 5,
+      scrambleText: "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable design systems.",
+    });
+
+    gsap.to(".stack", {
+      duration: 5,
+      scrambleText: "Next.js · React · Redux · Tailwind · TypeScript",
+    });
+  }, []);
+
   return (
     <div className="relative h-[85vh] p-6 text-scramble__content">
       {/* Scanlines */}
@@ -13,24 +38,19 @@ export default function NewLanding() {
 
       {/* Header */}
       <div className="mb-6">
-        <h1 className="text-3xl md:text-6xl font-bold tracking-wide my-2">
-          <p className="scramble-text-original">
-            <span className="scramble-text-1"></span>
-          </p>
-        </h1>
-        <p className="text-green-300/70 mt-1">Frontend Developer · Engineer</p>
+        <h1 className="name text-3xl md:text-6xl font-bold tracking-wide my-2"></h1>
+        <p className="title text-green-300/70 mt-1"></p>
       </div>
 
       {/* Content */}
-      <div className="grid md:grid-cols-2 gap-6 items-center mb-24">
+      <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
         {/* Terminal Text */}
         <div className="space-y-3 text-sm leading-relaxed">
-          <p className="opacity-80 text-3xl mb-12">
-            Building modern web interfaces with an engineering mindset. Focused
-            on clean UI, performance, and scalable design systems.
+          <p className="description opacity-80 text-3xl mb-12">
+            
           </p>
-          <p className="opacity-60 text-3xl">
-            Next.js · React · Redux · Tailwind · TypeScript
+          <p className="stack opacity-60 text-3xl">
+            
           </p>
         </div>
 
