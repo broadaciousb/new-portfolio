@@ -11,22 +11,22 @@ export default function Projects() {
           </h1>
           <ul className="project__list">
             <li className="project py-24">
-              <div className="project__wrapper flex justify-between items-center">
-                <div className="project__img--wrapper border border-green-500/40 shadow-[0_0_25px_rgba(0,255,128,0.15)] rounded-md overflow-hidden">
-                  <img
-                    src="/assets/autoshops.png"
-                    className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125"
-                    alt=""
-                  />
-                </div>
+              <div className="project__wrapper w-full flex justify-between items-center">
+                <img
+                  src="/assets/autoshops.png"
+                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  alt=""
+                />
+                <div className="project__wrapper--background"></div>
                 <div className="project__description px-12">
-                  <h3 className="project__description--title text-4xl pb-4">
+                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     Autoshops.com
                   </h3>
-                  <h4 className="project__description--sub-title pb-4">
+                  <h4 className="project__description--sub-title pb-4 text-green-300/70">
                     React, Material UI
                   </h4>
-                  <p className="project__description--para">
+
+                  <p className="project__description--para text-green-400">
                     Autoshops.com is an early stage startup that connects
                     customers with local auto repair shops. The frontend of the
                     website is contructed with React and Material UI, a library
@@ -46,22 +46,21 @@ export default function Projects() {
               </div>
             </li>
             <li className="project py-24">
-              <div className="project__wrapper flex justify-between items-center">
-                <div className="project__img--wrapper border border-green-500/40 shadow-[0_0_25px_rgba(0,255,128,0.15)] rounded-md overflow-hidden">
-                  <img
-                    src="/assets/summarist.png"
-                    className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125"
-                    alt=""
-                  />
-                </div>
-                <div className="project__description px-12">
-                  <h3 className="project__description--title text-4xl pb-4">
+              <div className="project__wrapper w-full flex justify-between items-center">
+                <img
+                  src="/assets/summarist.png"
+                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  alt=""
+                />
+
+                <div className="project__description w-[50%] px-12">
+                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     Summarist
                   </h3>
-                  <h4 className="project__description--sub-title pb-4">
+                  <h4 className="project__description--sub-title pb-4 text-green-300/70">
                     Nextjs, TypeScript, Redux, Tailwind, Firebase
                   </h4>
-                  <p className="project__description--para">
+                  <p className="project__description--para text-green-400">
                     A clone of a book subscription website where you can create
                     a profile, browse books to read or listen to, and with Swipe
                     implemented for subscription services. The site uses server
@@ -87,22 +86,21 @@ export default function Projects() {
               </div>
             </li>
             <li className="project py-24">
-              <div className="project__wrapper flex justify-between items-center">
-                <div className="project__img--wrapper border border-green-500/40 shadow-[0_0_25px_rgba(0,255,128,0.15)] rounded-md overflow-hidden">
-                  <img
-                    src="./assets/movie-site.png"
-                    className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125"
-                    alt=""
-                  />
-                </div>
+              <div className="project__wrapper w-full flex justify-between items-center">
+                <img
+                  src="./assets/movie-site.png"
+                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  alt=""
+                />
+
                 <div className="project__description px-12">
-                  <h3 className="project__description--title text-4xl pb-4">
+                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     Movie Site
                   </h3>
-                  <h4 className="project__description--sub-title">
+                  <h4 className="project__description--sub-title text-green-300/70">
                     HTML, CSS, JavaScript, React
                   </h4>
-                  <p className="project__description--para">
+                  <p className="project__description--para text-green-400">
                     A website where a user can search movie or TV show titles
                     and it returns multiple results collected from an API that
                     can be clicked on to see individual movie information. I
@@ -127,20 +125,21 @@ export default function Projects() {
               </div>
             </li>
             <li className="project py-24">
-              <div className="project__wrapper flex justify-between items-center">
-                <div className="project__img--wrapper border border-green-500/40 shadow-[0_0_25px_rgba(0,255,128,0.15)] rounded-md overflow-hidden">
-                  <img
-                    src="./assets/fes-internship.png"
-                    className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125"
-                    alt=""
-                  />
-                </div>
-                <div className="project__description px-12">
-                  <h3 className="project__description--title text-4xl pb-4">NFT Site</h3>
-                  <h4 className="project__description--sub-title">
+              <div className="project__wrapper w-full flex justify-between items-center">
+                <img
+                  src="./assets/fes-internship.png"
+                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  alt=""
+                />
+
+                <div className="project__description w-[50%] px-12">
+                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                    NFT Site
+                  </h3>
+                  <h4 className="project__description--sub-title text-green-300/70">
                     React, JavaScript
                   </h4>
-                  <p className="project__description--para">
+                  <p className="project__description--para text-green-400">
                     A website that I forked from another repository provided to
                     me as a virtual internship, where all the CSS and HTML
                     existed. Through multiple branches and pull requests I
@@ -164,20 +163,23 @@ export default function Projects() {
                 </div>
               </div>
             </li>
-            <li className="project">
-              <div className="project__wrapper">
+            <li className="project py-24">
+              <div className="project__wrapper w-full flex justify-between items-center">
                 <img
                   src="./assets/libraryReact.png"
-                  className="project__img"
+                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
                   alt=""
                 />
-                <div className="project__wrapper--background"></div>
-                <div className="project__description">
-                  <h3 className="project__description--title">Book Store</h3>
-                  <h4 className="project__description--sub-title">
+
+                <div className="project__wrapper w-full--background"></div>
+                <div className="project__description w-[50%] px-12">
+                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                    Book Store
+                  </h3>
+                  <h4 className="project__description--sub-title text-green-300/70">
                     HTML, CSS, JavaScript
                   </h4>
-                  <p className="project__description--para">
+                  <p className="project__description--para text-green-400">
                     Educational project I worked on where an object of books and
                     and individual book info was used as an imitation of an API.
                     I wrote JavaScript functions to dynamically load movie data
