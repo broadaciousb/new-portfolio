@@ -1,102 +1,82 @@
+"use client";
+
 import { IoMdClose } from "react-icons/io";
-import toggleModal from "./navBar";
+import { gsap } from "gsap";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Modal() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      id: "text-scramble",
+      defaults: { ease: "none" },
+    });
+
+    tl.to(".modal__title", {
+      duration: 1,
+      scrambleText: "I would love to chat with you.",
+    })
+      .to(".modal__sub-title", {
+        duration: 1,
+        scrambleText: "Feel free to send me a message.",
+      })
+      .to(".modal__sub-title-2", {
+        duration: 1,
+        scrambleText: "I am open to new opportunities",
+      });
+  }, []);
+
   return (
-    <div className="modal">
-      <div className="modal__half modal__about">
-        <h3 className="modal__title modal__title--about">
-          Here's a bit about me
-        </h3>
-        <h4 className="modal__sub-title modal__sub-title--about">
-          Frontend Software Engineer
-        </h4>
-        <p className="modal__para">
-          I'm a 29 year old <b className="purple">frontend software engineer</b>{" "}
-          with a passion for developing websites with great
-          <b className="purple">user experiences.</b>
-          <br />I currently work on extremely difficult engineering problems in
-          the construction industry and pursuing a career change to{" "}
-          <b className="purple">web development.</b>
-        </p>
-        <div className="modal__languages">
-          <figure className="modal__language">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-              className="modal__language--img"
-              alt=""
-            />
-            <span className="language__name">HTML</span>
-          </figure>
-          <figure className="modal__language">
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              className="modal__language--img"
-              alt=""
-            />
-            <span className="language__name">CSS</span>
-          </figure>
-          <figure className="modal__language">
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-              className="modal__language--img"
-              alt=""
-            />
-            <span className="language__name">JavaScript</span>
-          </figure>
-          <figure className="modal__language">
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-              className="modal__language--img"
-              alt=""
-            />
-            <span className="language__name">React</span>
-          </figure>
-        </div>
-      </div>
-      <div className="modal__half modal__contact">
-        <a href="" onClick={toggleModal}>
-          <IoMdClose className="modal__exit click" />
-        </a>
-        <h3 className="modal__title modal__title--contact">
-          Let's have a chat!
-        </h3>
-        <h4 className="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
-        </h4>
-        <form id="contact__form">
-          <div className="form__item">
-            <label className="form__item--label">Name</label>
+    <div className="modal text-white rounded-md border border-green-500/40 rounded-lgfont-mono">
+      <div className="modal__wrapper p-[24px] mx-auto">
+        <div className="modal__title text-center text-green-400 text-[48px] pb-[12px]">_______________</div>
+        <div className="modal__sub-title text-center text-green-400 text-[32px] pb-[12px]">_______________</div>
+        <div className="modal__sub-title-2 text-center text-green-400 text-[32px]">_______________</div>
+        <form className="mt-6 space-y-4">
+          <div className="flex flex-col gap-2">
+            <label htmlFor="user_name" className="text-green-400 text-sm">
+              Name
+            </label>
             <input
-              className="input"
+              id="user_name"
               name="user_name"
               type="text"
               required
-            ></input>
+              className="rounded-md border border-green-500/40 bg-transparent p-2 text-white focus:outline-none focus:border-green-400"
+            />
           </div>
-          <div className="form__item">
-            <label className="form__item--label">E-mail</label>
+
+          <div className="flex flex-col gap-2">
+            <label htmlFor="user_email" className="text-green-400 text-sm">
+              Email
+            </label>
             <input
-              className="input"
+              id="user_email"
               name="user_email"
               type="email"
               required
-            ></input>
+              className="rounded-md border border-green-500/40 bg-transparent p-2 text-white focus:outline-none focus:border-green-400"
+            />
           </div>
-          <div className="form__item">
-            <label className="form__item--label">Message</label>
-            <textarea className="input" name="message" required></textarea>
+
+          <div className="flex flex-col gap-2">
+            <label htmlFor="message" className="text-green-400 text-sm">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              required
+              className="rounded-md border border-green-500/40 bg-transparent p-2 text-white focus:outline-none focus:border-green-400"
+            />
           </div>
           <button id="contact__submit" className="form__submit">
-            Send it my way
+            Send Message
           </button>
         </form>
-        <div className="modal__overlay modal__overlay--loading">
-          <i className="fas fa-spinner"></i>
-        </div>
-        <div className="modal__overlay modal__overlay--success">
-          Thanks for the message! Looking forward to speaking to you soon.
-        </div>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ export default function NewLanding() {
   }, []);
 
   return (
-    <div className="relative h-[85vh - 120px] p-6 text-scramble__content">
+    <div className="relative h-[95vh - 80px] p-6 text-scramble__content">
       {/* Scanlines */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,255,128,0.03)_1px,transparent_1px)] bg-[size:100%_3px]" />
 

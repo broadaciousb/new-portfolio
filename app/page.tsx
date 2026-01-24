@@ -14,6 +14,8 @@ export default function Home() {
 
   //User ID: 6G_F_yg7CUVy-kc9W
 
+  const isModalOpen = true;
+
   return (
     <div className="min-h-screen bg-black flex items-center justify-center px-6">
       <main
@@ -21,7 +23,7 @@ export default function Home() {
           container
           relative
           w-[90vw]
-          h-[85vh]
+          h-[95vh]
           border
           border-green-500/40
           rounded-lgfont-mono
@@ -32,9 +34,15 @@ export default function Home() {
         "
       >
         <script src="myJS/gsap.min.js"></script>
-        <NewLanding />
-        <NavBar />
-        <Projects />
+        {isModalOpen ? (
+          <Modal />
+        ) : (
+          <>
+            <NewLanding />
+            <NavBar />
+            <Projects />
+          </>
+        )}
       </main>
     </div>
   );

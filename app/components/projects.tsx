@@ -1,13 +1,35 @@
+"use client";
+
 import Link from "next/link";
+import { gsap } from "gsap";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrambleTextPlugin,ScrollTrigger);
+
 
 export default function Projects() {
+  useEffect(() => {
+      gsap.to(".projects__title", {
+      duration: 2,
+      scrambleText: "Here are some of my projects",
+      scrollTrigger: {
+        trigger: ".projects__title",
+        scroller: ".container",
+        start: "top 70%",
+        once: true,
+      }
+    });
+  }, []);
+
   return (
-    <section id="projects" className="relative">
+    <section id="projects" className="relative py-[96px]">
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,255,128,0.03)_1px,transparent_1px)] bg-[size:100%_3px]" />
       <div className="py-6 px-24">
         <div className="row">
           <h1 className="text-3xl md:text-6xl font-bold text-center my-12">
-            Here are some of my <span className="">projects</span>
+            <div className="projects__title"></div>
           </h1>
           <ul className="project__list">
             <li className="project">
