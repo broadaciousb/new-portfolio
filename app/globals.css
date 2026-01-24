@@ -35,6 +35,16 @@
   display: flex;
   z-index: 150;
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  animation: modalAnimation 2s ease;
+}
+
+@keyframes modalAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
 }
 
 .nav-link {
