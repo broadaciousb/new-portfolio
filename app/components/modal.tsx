@@ -5,6 +5,8 @@ import { GiExitDoor } from "react-icons/gi";
 import { gsap } from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { useEffect } from "react";
+import { toggleModal } from "../redux/ToggleModalSlice";
+import { useAppDispatch } from "../redux/hooks";
 
 gsap.registerPlugin(ScrambleTextPlugin);
 
@@ -29,9 +31,11 @@ export default function Modal() {
       });
   }, []);
 
+  const dispatch = useAppDispatch();
+
   return (
     <div className="modal text-white rounded-md border border-green-500/40 rounded-lgfont-mono">
-      <button className="cursor-pointer modal__exit fixed top-[24px] right-[24px]">
+      <button onClick={() => {dispatch(toggleModal())}} className="cursor-pointer modal__exit fixed top-[24px] right-[24px]">
         <GiExitDoor className="w-[48px] h-[42px] md:w-[60px] md:h-[60px] text-green-400"/>
       </button>
       <div className="modal__wrapper px-[12px] pt-[48px] mx-auto">
