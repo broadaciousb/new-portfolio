@@ -1,6 +1,7 @@
 "use client";
 
 import { IoMdClose } from "react-icons/io";
+import { GiExitDoor } from "react-icons/gi";
 import { gsap } from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { useEffect } from "react";
@@ -30,14 +31,17 @@ export default function Modal() {
 
   return (
     <div className="modal text-white rounded-md border border-green-500/40 rounded-lgfont-mono">
-      <div className="modal__wrapper p-[24px] mx-auto">
-        <div className="modal__title text-center text-green-400 text-[32px] lg:text-[48px] pb=[4px] lg:pb-[12px]">
+      <button className="cursor-pointer modal__exit fixed top-[24px] right-[24px]">
+        <GiExitDoor className="w-[48px] h-[42px] md:w-[60px] md:h-[60px] text-green-400"/>
+      </button>
+      <div className="modal__wrapper px-[12px] pt-[48px] mx-auto">
+        <div className="modal__title text-center text-green-400 text-[32px] lg:text-[48px] pb=[4px] lg:pb-[12px] pt-[24px] md:pt-[0]">
           _______________
         </div>
-        <div className="modal__sub-title text-center text-green-400 text-[24px] lg:text-[32px] pb=[4px] lg:pb-[12px]">
+        <div className="modal__sub-title text-center text-green-400 text-[16px] sm:text-[24px] lg:text-[32px] pb=[4px] lg:pb-[12px]">
           _______________
         </div>
-        <div className="modal__sub-title-2 text-center text-green-400 text-[24px] lg:text-[32px]">
+        <div className="modal__sub-title-2 text-center text-green-400 text-[16px] sm:text-[24px] lg:text-[32px]">
           _______________
         </div>
         <form className="mt-6 space-y-4">
@@ -82,7 +86,7 @@ export default function Modal() {
           <div className="button__wrapper flex justify-center w-full">
             <button
               id="contact__submit"
-              className="form__submit w-full max-w-[240px] text-green-400 border border-green-500/40 text-[20px] py-[12px] px-[24px] hover:bg-green-500/40 hover:text-black"
+              className="form__submit cursor-pointer w-full max-w-[240px] text-green-400 border border-green-500/40 text-[20px] py-[12px] px-[24px] hover:bg-green-500/40 hover:text-black"
             >
               Send Message
             </button>

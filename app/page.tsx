@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import { IoMdMail } from "react-icons/io";
 import NewLanding from "./components/newLanding";
 
+
 export default function Home() {
   //Template ID: template_2tit16r
 
