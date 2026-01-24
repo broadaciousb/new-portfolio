@@ -26,6 +26,10 @@
   transition: all 400ms ease;
 }
 
+.project {
+  margin: 96px 0;
+}
+
 .project__wrapper {
   position: relative;
   overflow: hidden;
@@ -40,6 +44,7 @@
   max-width: 550px;
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
+  z-index: 60;
 }
 
 .project__wrapper--background {
@@ -51,6 +56,7 @@
   background-color: black;
   opacity: 0;
   transition: all 300ms ease;
+  z-index: 50;
 }
 
 .project__wrapper:hover .project__description {
@@ -59,5 +65,5 @@
 }
 
 .project__wrapper:hover .project__wrapper--background {
-  opacity: 1;
+  opacity: 0.9;
 }

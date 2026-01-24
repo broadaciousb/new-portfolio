@@ -33,6 +33,7 @@ export default function Home() {
       >
         <script src="myJS/gsap.min.js"></script>
         <NewLanding />
+        <NavBar />
         <Projects />
       </main>
     </div>

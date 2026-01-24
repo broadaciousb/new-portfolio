@@ -6,18 +6,18 @@ export default function Projects() {
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,255,128,0.03)_1px,transparent_1px)] bg-[size:100%_3px]" />
       <div className="py-6 px-24">
         <div className="row">
-          <h1 className="text-3xl md:text-6xl font-bold text-center mb-12">
+          <h1 className="text-3xl md:text-6xl font-bold text-center my-12">
             Here are some of my <span className="">projects</span>
           </h1>
           <ul className="project__list">
-            <li className="project py-24">
-              <div className="project__wrapper w-full flex justify-between items-center">
+            <li className="project">
+              <div className="project__wrapper rounded-md border border-green-500/40">
+                <div className="project__wrapper--background"></div>
                 <img
                   src="/assets/autoshops.png"
-                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  className="project__img w-full rounded-md opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
                   alt=""
                 />
-                <div className="project__wrapper--background"></div>
                 <div className="project__description px-12">
                   <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     Autoshops.com
@@ -45,11 +45,12 @@ export default function Projects() {
                 </div>
               </div>
             </li>
-            <li className="project py-24">
-              <div className="project__wrapper w-full flex justify-between items-center">
+            <li className="project">
+              <div className="project__wrapper rounded-md border border-green-500/40">
+                <div className="project__wrapper--background"></div>
                 <img
                   src="/assets/summarist.png"
-                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  className="project__img w-full rounded-md opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
                   alt=""
                 />
 
@@ -85,11 +86,12 @@ export default function Projects() {
                 </div>
               </div>
             </li>
-            <li className="project py-24">
-              <div className="project__wrapper w-full flex justify-between items-center">
+            <li className="project">
+              <div className="project__wrapper rounded-md border border-green-500/40">
+                <div className="project__wrapper--background"></div>
                 <img
                   src="./assets/movie-site.png"
-                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  className="project__img w-full rounded-md opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
                   alt=""
                 />
 
@@ -97,7 +99,7 @@ export default function Projects() {
                   <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     Movie Site
                   </h3>
-                  <h4 className="project__description--sub-title text-green-300/70">
+                  <h4 className="project__description--sub-title text-green-300/70 pb-4">
                     HTML, CSS, JavaScript, React
                   </h4>
                   <p className="project__description--para text-green-400">
@@ -124,11 +126,12 @@ export default function Projects() {
                 </div>
               </div>
             </li>
-            <li className="project py-24">
-              <div className="project__wrapper w-full flex justify-between items-center">
+            <li className="project">
+              <div className="project__wrapper rounded-md border border-green-500/40">
+                <div className="project__wrapper--background"></div>
                 <img
                   src="./assets/fes-internship.png"
-                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  className="project__img w-full rounded-md opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
                   alt=""
                 />
 
@@ -136,7 +139,7 @@ export default function Projects() {
                   <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     NFT Site
                   </h3>
-                  <h4 className="project__description--sub-title text-green-300/70">
+                  <h4 className="project__description--sub-title text-green-300/70 pb-4">
                     React, JavaScript
                   </h4>
                   <p className="project__description--para text-green-400">
@@ -163,11 +166,12 @@ export default function Projects() {
                 </div>
               </div>
             </li>
-            <li className="project py-24">
-              <div className="project__wrapper w-full flex justify-between items-center">
+            <li className="project">
+              <div className="project__wrapper rounded-md border border-green-500/40">
+                <div className="project__wrapper--background"></div>
                 <img
                   src="./assets/libraryReact.png"
-                  className="project__img rounded-md border border-green-500/40 opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  className="project__img w-full rounded-md opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
                   alt=""
                 />
 
@@ -176,7 +180,7 @@ export default function Projects() {
                   <h3 className="project__description--title text-4xl pb-4 text-green-400">
                     Book Store
                   </h3>
-                  <h4 className="project__description--sub-title text-green-300/70">
+                  <h4 className="project__description--sub-title text-green-300/70 pb-4">
                     HTML, CSS, JavaScript
                   </h4>
                   <p className="project__description--para text-green-400">
