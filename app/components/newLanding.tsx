@@ -32,14 +32,14 @@ export default function NewLanding() {
   }, []);
 
   return (
-    <div className="relative h-[95vh - 80px] p-6 text-scramble__content">
+    <div className="relative h-[calc(95vh-120px)] p-6 text-scramble__content">
       {/* Scanlines */}
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,255,128,0.03)_1px,transparent_1px)] bg-[size:100%_3px]" />
+      <div className="pointer-events-none absolute inset-0" />
 
       {/* Header */}
       <div className="mb-6">
-        <h1 className="name text-3xl md:text-6xl font-bold tracking-wide my-2"></h1>
-        <p className="title text-green-300/70 mt-1"></p>
+        <h1 className="name text-3xl md:text-6xl font-bold tracking-wide my-2">_____________</h1>
+        <p className="title text-green-300/70 mt-1">__________________________</p>
       </div>
 
       {/* Content */}
@@ -47,7 +47,7 @@ export default function NewLanding() {
         {/* Terminal Text */}
         <div className="space-y-3 text-sm leading-relaxed">
           <p className="description opacity-80 text-3xl mb-12">
-            
+            ______________________________________________________________________________________
           </p>
           <p className="stack opacity-60 text-3xl">
             

@@ -25,7 +25,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-[96px]">
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(0,255,128,0.03)_1px,transparent_1px)] bg-[size:100%_3px]" />
+      <div className="pointer-events-none absolute" />
       <div className="py-6 px-24">
         <div className="row">
           <h1 className="text-3xl md:text-6xl font-bold text-center my-12">
