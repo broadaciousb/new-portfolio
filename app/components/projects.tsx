@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrambleTextPlugin,ScrollTrigger);
 export default function Projects() {
   useEffect(() => {
       gsap.to(".projects__title", {
-      duration: 2,
+      duration: 1,
       scrambleText: "Here are some of my projects",
       scrollTrigger: {
         trigger: ".projects__title",
@@ -24,12 +24,12 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="relative py-[96px]">
+    <section id="projects" className="relative py-[120px]">
       <div className="pointer-events-none absolute" />
       <div className="py-6 px-24">
         <div className="row">
           <h1 className="text-3xl md:text-6xl font-bold text-center my-12">
-            <div className="projects__title"></div>
+            <div className="projects__title">________________</div>
           </h1>
           <ul className="project__list">
             <li className="project">

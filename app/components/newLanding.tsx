@@ -11,22 +11,22 @@ gsap.registerPlugin(ScrambleTextPlugin);
 export default function NewLanding() {
   useEffect(() => {
     gsap.to(".name", {
-      duration: 4,
+      duration: 3,
       scrambleText: "Broady Butler",
     });
 
     gsap.to(".title", {
-      duration: 4,
+      duration: 3,
       scrambleText: "Frontend Developer · Engineer",
     });
 
     gsap.to(".description", {
-      duration: 5,
+      duration: 4,
       scrambleText: "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable design systems.",
     });
 
     gsap.to(".stack", {
-      duration: 5,
+      duration: 4,
       scrambleText: "Next.js · React · Redux · Tailwind · TypeScript",
     });
   }, []);
@@ -46,21 +46,18 @@ export default function NewLanding() {
       <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
         {/* Terminal Text */}
         <div className="space-y-3 text-sm leading-relaxed">
-          <p className="description opacity-80 text-3xl mb-12">
+          <p className="description opacity-80 text-3xl mb-12 max-w-[720px] overflow-hidden">
             ______________________________________________________________________________________
           </p>
-          <p className="stack opacity-60 text-3xl">
-            
-          </p>
+          <p className="stack opacity-60 text-3xl">____________________</p>
         </div>
 
         {/* Image */}
-        <div className="relative w-full max-w-xs mx-auto">
-          <div className="absolute inset-0 bg-green-500/10 mix-blend-overlay rounded-md" />
+        <div className="relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg">       
           <img
             src="./assets/IMG_3083.JPEG"
             alt="Broady Butler"
-            className="rounded-md border border-green-500/40 opacity-80 grayscale contrast-125"
+            className="rounded-md opacity-80 grayscale contrast-125"
           />
         </div>
       </div>
