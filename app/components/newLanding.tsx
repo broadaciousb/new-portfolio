@@ -48,7 +48,7 @@ export default function NewLanding() {
               __________________________
             </p>
           </div>
-          <div className="small__img w-[80px] h-[80px] border border-green-500/40 rounded-[50%] overflow-hidden sm:hidden">
+          <div className="profile-picture small__img w-[80px] h-[80px] border border-green-500/40 rounded-[50%] overflow-hidden sm:hidden">
             <img
               src="./assets/IMG_3083.JPEG"
               alt="Broady Butler"
@@ -69,7 +69,7 @@ export default function NewLanding() {
         </div>
 
         {/* Image */}
-        <div className="relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg hidden sm:block">
+        <div className="profile-picture relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg hidden sm:block">
           <img
             src="./assets/IMG_3083.JPEG"
             alt="Broady Butler"
