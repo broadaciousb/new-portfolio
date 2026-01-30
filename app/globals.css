@@ -93,3 +93,7 @@
 .project__wrapper:hover .project__wrapper--background {
   opacity: 0.9;
 }
+
+@media(max-width: 480px) {
+  
+}

@@ -22,7 +22,8 @@ export default function NewLanding() {
 
     gsap.to(".description", {
       duration: 4,
-      scrambleText: "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable design systems.",
+      scrambleText:
+        "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable design systems.",
     });
 
     gsap.to(".stack", {
@@ -38,8 +39,23 @@ export default function NewLanding() {
 
       {/* Header */}
       <div className="mb-6">
-        <h1 className="name text-3xl md:text-6xl font-bold tracking-wide my-2">_____________</h1>
-        <p className="title text-green-300/70 mt-1">__________________________</p>
+        <div className="flex justify-between items-center">
+          <div>
+            <h1 className="name text-3xl md:text-6xl font-bold tracking-wide my-2">
+              _____________
+            </h1>
+            <p className="title text-green-300/70 mt-1">
+              __________________________
+            </p>
+          </div>
+          <div className="small__img w-[80px] h-[80px] border border-green-500/40 rounded-[50%] overflow-hidden sm:hidden">
+            <img
+              src="./assets/IMG_3083.JPEG"
+              alt="Broady Butler"
+              className="rounded-lg opacity-80 grayscale contrast-125 transform-[translateY(-10%)]"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Content */}
@@ -53,7 +69,7 @@ export default function NewLanding() {
         </div>
 
         {/* Image */}
-        <div className="relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg">       
+        <div className="relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg hidden sm:block">
           <img
             src="./assets/IMG_3083.JPEG"
             alt="Broady Butler"
@@ -62,7 +78,6 @@ export default function NewLanding() {
         </div>
       </div>
       {/* Navbar */}
-      
     </div>
   );
 }
