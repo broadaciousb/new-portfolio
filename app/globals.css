@@ -84,6 +84,24 @@
   animation: loadingAnimation 1s ease infinite;
 }
 
+.github-link {
+  will-change: opacity;
+  opacity: 0;
+  animation: revealAnimation 2s ease 1s forwards;
+}
+
+.linkedin-link {
+  will-change: opacity;
+  opacity: 0;
+  animation: revealAnimation 2s ease 2s forwards;
+}
+
+.pdf-link {
+  will-change: opacity;
+  opacity: 0;
+  animation: revealAnimation 2s ease 3s forwards;
+}
+
 nav {
   animation: navAnimation 4s ease;
 }

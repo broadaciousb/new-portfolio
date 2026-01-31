@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { gsap } from "gsap/gsap-core";
 import NavBar from "./navBar";
 import Projects from "./projects";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
+
 
 gsap.registerPlugin(ScrambleTextPlugin);
 
@@ -65,7 +68,9 @@ export default function NewLanding() {
           <p className="description opacity-80 text-xl sm:text-2xl md:text-3xl mb-12 max-w-[720px]">
             ______________________________________________________________________________________
           </p>
-          <p className="stack opacity-60 text-xl md:text-3xl">____________________</p>
+          <p className="stack opacity-60 text-xl md:text-3xl">
+            ____________________
+          </p>
         </div>
 
         {/* Image */}
@@ -76,6 +81,17 @@ export default function NewLanding() {
             className="rounded-md opacity-80 grayscale contrast-125"
           />
         </div>
+      </div>
+      <div className="flex justify-between md:justify-around">
+        <Link href="https://github.com/broadaciousb" className="github-link px-[12px]">
+          <FaGithub className="w-[60px] h-[60px] text-green-400 hover:text-green-400/50" />
+        </Link>
+        <Link href="https://www.linkedin.com/in/broady-butler-ei-8069aa173/" className="linkedin-link px-[12px]">
+          <FaLinkedin className="w-[60px] h-[60px] text-green-400 hover:text-green-400/50" />
+        </Link>
+        <Link href="/assets/Broady Butler Resume.pdf" download className="pdf-link px-[12px]">
+          <FaFilePdf className="w-[60px] h-[60px] text-green-400 hover:text-green-400/50" />
+        </Link>
       </div>
       {/* Navbar */}
     </div>
