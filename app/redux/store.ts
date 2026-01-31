@@ -1,11 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import modalReducer from './ToggleModalSlice'
+import LoadingReducer from './LoadingSlice';
 // ...
 
+const reducer = combineReducers({
+  toggleModal: modalReducer,
+    loading: LoadingReducer,
+})
+
 export const store = configureStore({
-  reducer: {
-    toggleModal: modalReducer,
-  }
+  reducer: reducer,
 })
 
 // Infer the `RootState`,  `AppDispatch`, and `AppStore` types from the store itself

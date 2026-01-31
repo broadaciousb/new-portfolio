@@ -2,22 +2,26 @@
 
 import React, { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
-
+import { startLoading, stopLoading } from "../redux/LoadingSlice";
+import { useAppDispatch } from "../redux/hooks";
+import { toggleModal } from "../redux/ToggleModalSlice";
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
   const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
   const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_USER_ID!;
 
- 
+ const dispatch = useAppDispatch();
 
-  const sendEmail = (e: FormEvent) => {
+  const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
 
     if (!form.current) return;
 
+    dispatch(startLoading());
+    
     try {
-      emailjs.sendForm(
+      await emailjs.sendForm(
         "service_e3qqtcf",
         "template_2tit16r",
         form.current,
@@ -29,6 +33,8 @@ const ContactForm: React.FC = () => {
       console.error("EmailJS error:", error);
       alert("Failed to send message. Please try again.");
     }
+    dispatch(stopLoading());
+    dispatch(toggleModal());
   };
 
   return (
@@ -43,7 +49,7 @@ const ContactForm: React.FC = () => {
             name="user_name"
             type="text"
             required
-            className="rounded-md border border-green-500/40 bg-transparent p-2 text-white focus:outline-none focus:border-green-400"
+            className="rounded-md border border-green-500/40 bg-transparent p-2 text-green-400 focus:outline-none focus:border-green-400"
           />
         </div>
 
@@ -56,7 +62,7 @@ const ContactForm: React.FC = () => {
             name="user_email"
             type="email"
             required
-            className="rounded-md border border-green-500/40 bg-transparent p-2 text-white focus:outline-none focus:border-green-400"
+            className="rounded-md border border-green-500/40 bg-transparent p-2 text-green-400 focus:outline-none focus:border-green-400"
           />
         </div>
 
@@ -69,7 +75,7 @@ const ContactForm: React.FC = () => {
             name="message"
             rows={4}
             required
-            className="rounded-md border border-green-500/40 bg-transparent p-2 text-white focus:outline-none focus:border-green-400"
+            className="rounded-md border border-green-500/40 bg-transparent p-2 text-green-400 focus:outline-none focus:border-green-400"
           />
         </div>
         <div className="button__wrapper flex justify-center w-full">
