@@ -26,7 +26,7 @@ export default function Projects() {
   return (
     <section id="projects" className="relative py-[120px]">
       <div className="pointer-events-none absolute" />
-      <div className="py-6 px-12">
+      <div className="py-6 px-6 sm:px-12">
         <div className="row">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-center my-12">
             <div className="projects__title">________________</div>

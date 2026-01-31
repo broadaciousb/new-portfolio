@@ -185,10 +185,14 @@ nav {
 
 @media (max-width: 480px) {
   .project__description {
-    left: 8px;
+    left: 0;
   }
 
   .project__description--title {
     font-size: 24px;
+  }
+
+  .project__description--sub-title {
+    display: none;
   }
 }
