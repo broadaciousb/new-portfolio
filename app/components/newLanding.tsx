@@ -61,8 +61,8 @@ export default function NewLanding() {
       {/* Content */}
       <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
         {/* Terminal Text */}
-        <div className="space-y-3 text-sm leading-relaxed">
-          <p className="description opacity-80 text-2xl sm:text-2xl md:text-3xl mb-12 max-w-[720px] overflow-hidden">
+        <div className="space-y-3 text-sm leading-relaxed overflow-hidden">
+          <p className="description opacity-80 text-2xl sm:text-2xl md:text-3xl mb-12 max-w-[720px]">
             ______________________________________________________________________________________
           </p>
           <p className="stack opacity-60 text-2xl md:text-3xl">____________________</p>

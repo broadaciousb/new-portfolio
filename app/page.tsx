@@ -14,6 +14,7 @@ import { store } from "./redux/store";
 import ReduxProvider from "./redux/provider";
 import Main from "./main";
 
+
 export default function Home() {
   //Template ID: template_2tit16r
 

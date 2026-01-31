@@ -59,11 +59,23 @@
   }
 }
 
+@keyframes navAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+nav {
+  animation: navAnimation 4s ease;
+}
+
 .nav-link {
   will-change: opacity;
   opacity: 0;
-  animation-delay: 4s;
-  animation: revealAnimation 2s ease forwards;
+  animation: revealAnimation 2s ease 4s forwards;
 }
 
 .profile-picture {
