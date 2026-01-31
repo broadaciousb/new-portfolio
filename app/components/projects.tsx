@@ -29,7 +29,7 @@ export default function Projects() {
       <div className="pointer-events-none absolute" />
       <div className="py-6 px-12">
         <div className="row">
-          <h1 className="text-3xl md:text-6xl font-bold text-center my-12">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-center my-12">
             <div className="projects__title">________________</div>
           </h1>
           <ul className="project__list">
@@ -42,10 +42,10 @@ export default function Projects() {
                   alt=""
                 />
                 <div className="project__description px-12">
-                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                  <h3 className="project__description--title text-green-400">
                     Autoshops.com
                   </h3>
-                  <h4 className="project__description--sub-title pb-4 text-green-300/70">
+                  <h4 className="project__description--sub-title text-green-300/70">
                     React, Material UI
                   </h4>
 
@@ -77,11 +77,11 @@ export default function Projects() {
                   alt=""
                 />
 
-                <div className="project__description w-[50%] px-12">
-                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                <div className="project__description px-12">
+                  <h3 className="project__description--title text-green-400">
                     Summarist
                   </h3>
-                  <h4 className="project__description--sub-title pb-4 text-green-300/70">
+                  <h4 className="project__description--sub-title text-green-300/70">
                     Nextjs, TypeScript, Redux, Tailwind, Firebase
                   </h4>
                   <p className="project__description--para text-green-400 mb-[12px]">
@@ -119,10 +119,10 @@ export default function Projects() {
                 />
 
                 <div className="project__description px-12">
-                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                  <h3 className="project__description--title text-green-400">
                     Movie Site
                   </h3>
-                  <h4 className="project__description--sub-title text-green-300/70 pb-4">
+                  <h4 className="project__description--sub-title text-green-300/70">
                     HTML, CSS, JavaScript, React
                   </h4>
                   <p className="project__description--para text-green-400 mb-[12px]">
@@ -158,11 +158,11 @@ export default function Projects() {
                   alt=""
                 />
 
-                <div className="project__description w-[50%] px-12">
-                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                <div className="project__description px-12">
+                  <h3 className="project__description--title text-green-400">
                     NFT Site
                   </h3>
-                  <h4 className="project__description--sub-title text-green-300/70 pb-4">
+                  <h4 className="project__description--sub-title text-green-300/70">
                     React, JavaScript
                   </h4>
                   <p className="project__description--para text-green-400 mb-[12px]">
@@ -199,11 +199,11 @@ export default function Projects() {
                 />
 
                 <div className="project__wrapper w-full--background"></div>
-                <div className="project__description w-[50%] px-12">
-                  <h3 className="project__description--title text-4xl pb-4 text-green-400">
+                <div className="project__description px-12">
+                  <h3 className="project__description--title text-green-400">
                     Book Store
                   </h3>
-                  <h4 className="project__description--sub-title text-green-300/70 pb-4">
+                  <h4 className="project__description--sub-title text-green-300/70">
                     HTML, CSS, JavaScript
                   </h4>
                   <p className="project__description--para text-green-400 mb-[12px]">

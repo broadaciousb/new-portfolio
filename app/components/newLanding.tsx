@@ -41,14 +41,14 @@ export default function NewLanding() {
       <div className="mb-6">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="name text-3xl md:text-6xl font-bold tracking-wide my-2">
+            <h1 className="name text-3xl sm:text-5xl md:text-6xl font-bold tracking-wide my-2">
               _____________
             </h1>
-            <p className="title text-green-300/70 mt-1">
+            <p className="title text-2xl sm:text-3xl text-green-300/70 mt-1">
               __________________________
             </p>
           </div>
-          <div className="profile-picture small__img w-[80px] h-[80px] border border-green-500/40 rounded-[50%] overflow-hidden sm:hidden">
+          <div className="profile-picture small__img w-[80px] h-[80px] border border-green-500/40 rounded-[50%] overflow-hidden md:hidden">
             <img
               src="./assets/IMG_3083.JPEG"
               alt="Broady Butler"
@@ -62,14 +62,14 @@ export default function NewLanding() {
       <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
         {/* Terminal Text */}
         <div className="space-y-3 text-sm leading-relaxed">
-          <p className="description opacity-80 text-3xl mb-12 max-w-[720px] overflow-hidden">
+          <p className="description opacity-80 text-2xl sm:text-2xl md:text-3xl mb-12 max-w-[720px] overflow-hidden">
             ______________________________________________________________________________________
           </p>
-          <p className="stack opacity-60 text-3xl">____________________</p>
+          <p className="stack opacity-60 text-2xl md:text-3xl">____________________</p>
         </div>
 
         {/* Image */}
-        <div className="profile-picture relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg hidden sm:block">
+        <div className="profile-picture relative w-full max-w-xs mx-auto border border-green-500/40 rounded-lg hidden md:block">
           <img
             src="./assets/IMG_3083.JPEG"
             alt="Broady Butler"
