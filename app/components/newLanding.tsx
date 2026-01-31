@@ -41,10 +41,10 @@ export default function NewLanding() {
       <div className="mb-6">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="name text-3xl sm:text-5xl md:text-6xl font-bold tracking-wide my-2">
+            <h1 className="name text-2xl sm:text-5xl md:text-6xl font-bold tracking-wide my-2">
               _____________
             </h1>
-            <p className="title text-2xl sm:text-3xl text-green-300/70 mt-1">
+            <p className="title text-sm sm:text-3xl text-green-300/70 mt-1">
               __________________________
             </p>
           </div>
@@ -62,10 +62,10 @@ export default function NewLanding() {
       <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
         {/* Terminal Text */}
         <div className="space-y-3 text-sm leading-relaxed overflow-hidden">
-          <p className="description opacity-80 text-2xl sm:text-2xl md:text-3xl mb-12 max-w-[720px]">
+          <p className="description opacity-80 text-xl sm:text-2xl md:text-3xl mb-12 max-w-[720px]">
             ______________________________________________________________________________________
           </p>
-          <p className="stack opacity-60 text-2xl md:text-3xl">____________________</p>
+          <p className="stack opacity-60 text-xl md:text-3xl">____________________</p>
         </div>
 
         {/* Image */}
