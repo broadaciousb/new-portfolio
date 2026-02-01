@@ -50,7 +50,7 @@ export default function Modal() {
       <div className="modal__wrapper px-[12px] pt-[48px] mx-auto">
         {!loading ? (
           <>
-            <div className="modal__title text-center text-green-400 text-[32px] lg:text-[48px] pb=[4px] lg:pb-[12px] pt-[24px] md:pt-[0]">
+            <div className="modal__title text-center text-green-400 text-[24px] md:text-[32px] lg:text-[48px] pb=[4px] lg:pb-[12px] pt-[24px] md:pt-[0]">
               _______________
             </div>
             <div className="modal__sub-title text-center text-green-400 text-[16px] sm:text-[24px] lg:text-[32px] pb=[4px] lg:pb-[12px]">
