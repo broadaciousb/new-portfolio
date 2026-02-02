@@ -36,7 +36,7 @@ export default function NewLanding() {
   }, []);
 
   return (
-    <div className="relative h-[calc(95vh-120px)] p-6 text-scramble__content">
+    <div className="relative h-[calc(95vh-80px)] sm:h-[calc(95vh-120px)] p-6 text-scramble__content">
       {/* Scanlines */}
       <div className="pointer-events-none absolute inset-0" />
 
