@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail} className="mt-6 space-y-4">
+      <form ref={form} onSubmit={sendEmail} className="mt-3 sm:mt-6 space-y-4">
         <div className="flex flex-col gap-2">
           <label htmlFor="user_name" className="text-green-400 text-sm">
             Name
