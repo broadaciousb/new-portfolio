@@ -43,9 +43,9 @@ export default function Modal() {
         onClick={() => {
           dispatch(toggleModal());
         }}
-        className="cursor-pointer modal__exit fixed top-[24px] right-[24px]"
+        className="click cursor-pointer modal__exit fixed top-[24px] right-[24px]"
       >
-        <GiExitDoor className="w-[48px] h-[42px] md:w-[60px] md:h-[60px] text-green-400" />
+        <GiExitDoor className="w-[48px] h-[42px] md:w-[60px] md:h-[60px] text-green-400 hover:text-green-400/70" />
       </button>
       <div className="modal__wrapper px-[12px] pt-[48px] mx-auto">
         {!loading ? (

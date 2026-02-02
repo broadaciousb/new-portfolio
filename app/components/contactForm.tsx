@@ -11,7 +11,7 @@ const ContactForm: React.FC = () => {
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
   const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_USER_ID!;
 
- const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch();
 
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
@@ -19,13 +19,13 @@ const ContactForm: React.FC = () => {
     if (!form.current) return;
 
     dispatch(startLoading());
-    
+
     try {
       await emailjs.sendForm(
         "service_e3qqtcf",
         "template_2tit16r",
         form.current,
-        {publicKey: "6G_F_yg7CUVy-kc9W"},
+        { publicKey: "6G_F_yg7CUVy-kc9W" },
       );
       console.log("SUCCESS!");
       alert("Message sent successfully!");
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
           <button
             id="contact__submit"
             type="submit"
-            className="form__submit cursor-pointer w-full max-w-[240px] text-green-400 border border-green-500/40 text-[20px] py-[12px] px-[24px] hover:bg-green-500/40 hover:text-black"
+            className="form__submit click cursor-pointer w-full max-w-[240px] text-green-400 border border-green-500/40 text-[20px] py-[12px] px-[24px] hover:bg-green-500/40 hover:text-black active:bg-black active:text-green-400"
           >
             Send Message
           </button>

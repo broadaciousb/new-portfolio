@@ -83,13 +83,13 @@ export default function NewLanding() {
         </div>
       </div>
       <div className="flex justify-between md:justify-around">
-        <Link href="https://github.com/broadaciousb" className="github-link px-[12px]">
+        <Link href="https://github.com/broadaciousb" className="github-link px-[12px] click">
           <FaGithub className="w-[60px] h-[60px] text-green-400 hover:text-green-400/50" />
         </Link>
-        <Link href="https://www.linkedin.com/in/broady-butler-ei-8069aa173/" className="linkedin-link px-[12px]">
+        <Link href="https://www.linkedin.com/in/broady-butler-ei-8069aa173/" className="linkedin-link px-[12px] click">
           <FaLinkedin className="w-[60px] h-[60px] text-green-400 hover:text-green-400/50" />
         </Link>
-        <Link href="/assets/Broady Butler Resume.pdf" download className="pdf-link px-[12px]">
+        <Link href="/assets/Broady Butler Resume.pdf" download className="pdf-link px-[12px] click">
           <FaFilePdf className="w-[60px] h-[60px] text-green-400 hover:text-green-400/50" />
         </Link>
       </div>
