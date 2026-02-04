@@ -187,6 +187,10 @@ nav {
   font-size: 16px;
 }
 
+.project__link--icon {
+  font-size: 36px;
+}
+
 .project__wrapper--background {
   position: absolute;
   top: 0;

@@ -26,7 +26,7 @@ export default function NewLanding() {
     gsap.to(".description", {
       duration: 4,
       scrambleText:
-        "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable design systems.",
+        "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable technology structure.",
     });
 
     gsap.to(".stack", {
@@ -36,14 +36,14 @@ export default function NewLanding() {
   }, []);
 
   return (
-    <div className="relative h-[calc(95vh-80px)] sm:h-[calc(95vh-120px)] p-6 text-scramble__content">
+    <div id="landing" className="relative h-[calc(95vh-80px)] sm:h-[calc(95vh-120px)] p-6 text-scramble__content">
       {/* Scanlines */}
       <div className="pointer-events-none absolute inset-0" />
 
       {/* Header */}
       <div className="mb-6">
         <div className="flex justify-between items-center">
-          <div>
+          <div className="w-[70%] overflow-x-hidden">
             <h1 className="name text-2xl sm:text-5xl md:text-6xl font-bold tracking-wide my-2">
               _____________
             </h1>

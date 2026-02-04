@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import NavBar from "./components/navBar";
@@ -12,16 +12,33 @@ import { useAppDispatch, useAppSelector } from "./redux/hooks";
 import { toggleModal } from "./redux/ToggleModalSlice";
 import { store } from "./redux/store";
 import ReduxProvider from "./redux/provider";
-
+import { gsap } from "gsap";
+import { ScrollSmoother } from "gsap/all";
+import { useEffect } from "react";
 
 export default function Main() {
   const isModalOpen: boolean = useAppSelector(
     (state: any) => state.toggleModal.isModalOpen,
   );
+
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollSmoother);
+
+  //   let smoother = ScrollSmoother.create({
+  //     smooth: 1,
+  //     wrapper: "#smooth-wrapper",
+  //     content: "#smooth-content",
+  //   });
+
+  //   return () => {
+  //     smoother.kill();
+  //   };
+  // }, []);
+
   return (
     <div className="min-h-screen bg-black flex items-center justify-center px-6">
-        <main
-          className="
+      <main
+        className="
           container
           relative
           w-[90vw]
@@ -34,18 +51,17 @@ export default function Main() {
           overflow-y-auto
           terminal-scroll inset-0 bg-[linear-gradient(rgba(0,255,128,0.06)_1px,transparent_1px)] bg-[size:100%_3px]
         "
-        >
-          <script src="myJS/gsap.min.js"></script>
-          {isModalOpen ? (
-            <Modal />
-          ) : (
-            <>
-              <NewLanding />
-              <NavBar />
-              <Projects />
-            </>
-          )}
-        </main>
-      </div>
+      >
+        {isModalOpen ? (
+          <Modal />
+        ) : (
+          <>
+            <NewLanding />
+            <NavBar />
+            <Projects />
+          </>
+        )}
+      </main>
+    </div>
   );
 }
