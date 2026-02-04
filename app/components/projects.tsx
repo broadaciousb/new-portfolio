@@ -59,6 +59,7 @@ export default function Projects() {
                   <div className="project__description--links">
                     <Link
                       href="https://www.autoshops.com/"
+                      target="_blank"
                       className="project__description--link click"
                     >
                       <FaLink className="project__link--icon text-green-400 hover:text-green-400/50" />
@@ -95,12 +96,14 @@ export default function Projects() {
                   <div className="project__description--links flex">
                     <Link
                       href="https://github.com/broadaciousb/summarist-internship"
+                      target="_blank"
                       className="project__description--link mr-[16px] click"
                     >
                       <FaGithub className="project__link--icon text-green-400 hover:text-green-400/50" />
                     </Link>
                     <Link
                       href="https://summarist-internship-fawn.vercel.app/"
+                      target="_blank"
                       className="project__description--link mr-[16px] click"
                     >
                       <FaLink className="project__link--icon text-green-400 hover:text-green-400/50" />
@@ -136,12 +139,14 @@ export default function Projects() {
                   <div className="project__description--links flex">
                     <Link
                       href="https://github.com/broadaciousb/movie-react-site"
+                      target="_blank"
                       className="project__description--link mr-[16px] click"
                     >
                       <FaGithub className="project__link--icon text-green-400 hover:text-green-400/50" />
                     </Link>
                     <Link
                       href="https://movie-react-site.vercel.app/"
+                      target="_blank"
                       className="project__description--link mr-[16px] click"
                     >
                       <FaLink className="project__link--icon text-green-400 hover:text-green-400/50" />
@@ -177,12 +182,14 @@ export default function Projects() {
                   <div className="project__description--links flex">
                     <Link
                       href="https://github.com/broadaciousb/broady-internship"
+                      target="_blank"
                       className="project__description--link click"
                     >
                       <FaGithub className="project__link--icon text-green-400 mr-[16px] hover:text-green-400/50" />
                     </Link>
                     <Link
                       href="https://broady-internship.vercel.app/"
+                      target="_blank"
                       className="project__description--link click"
                     >
                       <FaLink className="project__link--icon text-green-400 mr-[16px] hover:text-green-400/50" />
@@ -219,12 +226,14 @@ export default function Projects() {
                   <div className="project__description--links flex">
                     <Link
                       href="https://github.com/broadaciousb/library-react"
+                      target="_blank"
                       className="project__description--link click"
                     >
                       <FaGithub className="project__link--icon text-green-400 mr-[16px] hover:text-green-400/50" />
                     </Link>
                     <Link
                       href="https://library-react-53d28fe01db4.herokuapp.com/"
+                      target="_blank"
                       className="project__description--link click"
                     >
                       <FaLink className="project__link--icon text-green-400 mr-[16px] hover:text-green-400/50" />
