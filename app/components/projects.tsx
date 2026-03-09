@@ -23,6 +23,7 @@ export default function Projects() {
     });
   }, []);
 
+
   return (
     <section id="projects" className="relative py-[120px]">
       <div className="pointer-events-none absolute" />
@@ -199,7 +200,7 @@ export default function Projects() {
               </div>
             </li>
 
-            <li className="project">
+            {/* <li className="project">
               <div className="project__wrapper rounded-md border border-green-500/40">
                 <div className="project__wrapper--background"></div>
                 <img
@@ -241,7 +242,7 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
