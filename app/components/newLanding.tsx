@@ -6,7 +6,7 @@ import { gsap } from "gsap/gsap-core";
 import NavBar from "./navBar";
 import Projects from "./projects";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFilePdf, FaArrowRight, } from "react-icons/fa";
 
 
 gsap.registerPlugin(ScrambleTextPlugin);
@@ -42,7 +42,7 @@ export default function NewLanding() {
 
       {/* Header */}
       <div className="mb-6">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center h-[100px]">
           <div className="w-[70%] overflow-x-hidden">
             <h1 className="name text-2xl sm:text-5xl md:text-6xl font-bold tracking-wide my-2">
               _____________
@@ -64,7 +64,7 @@ export default function NewLanding() {
       {/* Content */}
       <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
         {/* Terminal Text */}
-        <div className="space-y-3 text-sm leading-relaxed overflow-hidden">
+        <div className="space-y-3 text-sm leading-relaxed overflow-hidden h-[300px]">
           <p className="description opacity-80 text-xl sm:text-2xl md:text-3xl mb-12 max-w-[720px]">
             ______________________________________________________________________________________
           </p>
