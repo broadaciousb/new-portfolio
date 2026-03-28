@@ -119,29 +119,29 @@
 .github-link {
   will-change: opacity;
   opacity: 0;
-  animation: revealAnimation 2s ease 1s forwards;
+  animation: revealAnimation 2s ease 500ms forwards;
 }
 
 .linkedin-link {
   will-change: opacity;
   opacity: 0;
-  animation: revealAnimation 2s ease 2s forwards;
+  animation: revealAnimation 2s ease 1s forwards;
 }
 
 .pdf-link {
   will-change: opacity;
   opacity: 0;
-  animation: revealAnimation 2s ease 3s forwards;
+  animation: revealAnimation 2s ease 2s forwards;
 }
 
 nav {
-  animation: navAnimation 4s ease;
+  animation: navAnimation 2s ease;
 }
 
 .nav-link {
   will-change: opacity;
   opacity: 0;
-  animation: revealAnimation 2s ease 4s forwards;
+  animation: revealAnimation 2s ease 2500ms forwards;
 }
 
 .profile-picture {

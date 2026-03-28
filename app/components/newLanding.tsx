@@ -14,23 +14,23 @@ gsap.registerPlugin(ScrambleTextPlugin);
 export default function NewLanding() {
   useEffect(() => {
     gsap.to(".name", {
-      duration: 3,
+      duration: 1,
       scrambleText: "Broady Butler",
     });
 
     gsap.to(".title", {
-      duration: 3,
+      duration: 1,
       scrambleText: "Frontend Developer · Engineer",
     });
 
     gsap.to(".description", {
-      duration: 4,
+      duration: 2,
       scrambleText:
         "Building modern web interfaces with an engineering mindset. Focused on clean UI, performance, and scalable technology structure.",
     });
 
     gsap.to(".stack", {
-      duration: 4,
+      duration: 2,
       scrambleText: "Next.js · React · Redux · Tailwind · TypeScript",
     });
   }, []);
