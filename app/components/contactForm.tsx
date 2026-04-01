@@ -73,7 +73,7 @@ const ContactForm: React.FC = () => {
           <textarea
             id="message"
             name="message"
-            rows={4}
+            rows={2}
             required
             className="rounded-md border border-green-500/40 bg-transparent p-2 text-green-400 focus:outline-none focus:border-green-400"
           />

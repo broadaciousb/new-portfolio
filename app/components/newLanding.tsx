@@ -36,7 +36,7 @@ export default function NewLanding() {
   }, []);
 
   return (
-    <div id="landing" className="relative h-[calc(95vh-80px)] sm:h-[calc(95vh-120px)] p-6 text-scramble__content">
+    <div id="landing" className="relative min-h-[calc(95vh-80px)] sm:min-h-[calc(95vh-120px)] p-6 text-scramble__content">
       {/* Scanlines */}
       <div className="pointer-events-none absolute inset-0" />
 
@@ -62,7 +62,7 @@ export default function NewLanding() {
       </div>
 
       {/* Content */}
-      <div className="grid md:grid-cols-2 gap-6 items-center mb-12">
+      <div className="grid md:grid-cols-2 gap-6 items-center md:mb-12">
         {/* Terminal Text */}
         <div className="space-y-3 text-sm leading-relaxed overflow-hidden h-[300px]">
           <p className="description opacity-80 text-xl sm:text-2xl md:text-3xl mb-12 max-w-[720px]">
