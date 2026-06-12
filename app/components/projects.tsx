@@ -23,7 +23,6 @@ export default function Projects() {
     });
   }, []);
 
-
   return (
     <section id="projects" className="relative py-[120px]">
       <div className="pointer-events-none absolute" />
@@ -104,6 +103,42 @@ export default function Projects() {
                     </Link>
                     <Link
                       href="https://summarist-internship-fawn.vercel.app/"
+                      target="_blank"
+                      className="project__description--link mr-[16px] click"
+                    >
+                      <FaLink className="project__link--icon text-green-400 hover:text-green-400/50" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li className="project">
+              <div className="project__wrapper rounded-md border border-green-500/40">
+                <div className="project__wrapper--background"></div>
+                <img
+                  src="/assets/coastal-reaper.png"
+                  className="project__img w-full rounded-md opacity-80 grayscale contrast-125 rounded-md overflow-hidden"
+                  alt=""
+                />
+
+                <div className="project__description px-12">
+                  <h3 className="project__description--title text-green-400">
+                    Coastalreaper.com
+                  </h3>
+                  <h4 className="project__description--sub-title text-green-300/70">
+                    Nextjs, TypeScript, Redux, Tailwind
+                  </h4>
+                  <p className="project__description--para text-green-400 mb-[12px]">
+                    Online store designed to attract a specific lifestyle to the
+                    brand built with Nextjs. Using Stripe integration to handle
+                    credit card processing. Since the site is small no API was
+                    needed to store all the items other than entering the data
+                    for the products into stripe.
+                  </p>
+                  <div className="project__description--links flex">
+                    <Link
+                      href="https://coastalreaper.com/"
                       target="_blank"
                       className="project__description--link mr-[16px] click"
                     >
