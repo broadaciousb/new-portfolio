@@ -83,7 +83,7 @@ export default function Projects() {
                     Summarist
                   </h3>
                   <h4 className="project__description--sub-title text-green-300/70">
-                    Nextjs, TypeScript, Redux, Tailwind, Firebase
+                    Nextjs, TypeScript, Redux, Tailwind, Firebase, Stripe
                   </h4>
                   <p className="project__description--para text-green-400 mb-[12px]">
                     A clone of a book subscription website where you can create
@@ -127,11 +127,11 @@ export default function Projects() {
                     Coastalreaper.com
                   </h3>
                   <h4 className="project__description--sub-title text-green-300/70">
-                    Nextjs, TypeScript, Redux, Tailwind
+                    Nextjs, TypeScript, Redux, Tailwind, Stripe
                   </h4>
                   <p className="project__description--para text-green-400 mb-[12px]">
-                    Online store designed to attract a specific lifestyle to the
-                    brand built with Nextjs. Using Stripe integration to handle
+                    Online store built with Nextjs and designed to attract a specific lifestyle to the
+                    brand. Using Codex to improve workflow efficiency and Stripe integration to handle
                     credit card processing. Since the site is small no API was
                     needed to store all the items other than entering the data
                     for the products into stripe.
